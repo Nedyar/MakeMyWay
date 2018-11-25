@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+    <title>Places Search Box</title>
+    <style>
+    body{
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+    }
+      .slidecontainer {
+          width: 100%;
+      }
+
+      .slider {
+          -webkit-appearance: none;
+          width: 90%;
+          height: 10px;
+          border-radius: 5px;
+          background: #d3d3d3;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+      }
+
+      .slider:hover {
+          opacity: 1;
+      }
+
+      /*.slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 23px;
+          height: 24px;
+          border: 0;
+          background: url('https://i.imgur.com/wBJ4Uwm.png');
+          cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+          width: 23px;
+          height: 24px;
+          border: 0;
+          background: url('https://i.imgur.com/wBJ4Uwm.png');
+          cursor: pointer;
+      }*/
+      .lbl{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        margin-top: 40px;
+      }
+      #vl{
+        width: 100%;
+        text-align: center;
+      }
+      input{
+        width: 90%;
+        height: 40px;
+        text-align: center;
+        border: 1px solid grey ;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <form>
+      <p class="lbl">Inicio</p>
+      <input type="datetime-local" name="fi">
+      <p class="lbl">Fin</p>
+      <input type="datetime-local" name="ff">
+      <p class="lbl">Presupuesto</p>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="2000" class="slider" value="250" id="myRange">
+        <p id="vl"><span id="demo">250</span>€</p>
+      </div>
+
+    <script>
+      
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      if(this.value == "2000"){
+        output.innerHTML = this.value + "+";
+      }
+      output.innerHTML = this.value;
+    }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#s-9810bd7b-fdbe-4881-9b22-db24e2f2a605 #s-Button_1 {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #679868;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: #679868;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #679868;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: #679868;
+  border-radius: 8px 8px 8px 8px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  height: 25px;
+  width: 242px;
+  -ms-transform: rotate(0.0deg);
+}
+.devMobile #jim-container .ui-page {
+  overflow-x: hidden;
+}
+.non_jim_mobile #simulation {
+  overflow-x: hidden;
+}
+.web #simulation {
+  overflow-x: hidden;
+}
+#s-9810bd7b-fdbe-4881-9b22-db24e2f2a605 > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
